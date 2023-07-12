@@ -1,0 +1,65 @@
+@use "../components/sass" as *;
+
+.container {
+  padding: 0 90px;
+}
+
+// button
+
+.btn {
+  padding: 10px 14px;
+  border-radius: 5px;
+  @include button(none, none, none);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 8px;
+  /* bootstrap color */
+  &.btn-primary {
+    @include button($light, $primary, $primary-active);
+  }
+
+  &.btn-light {
+    @include button($dark, $light, $light-active);
+  }
+
+  &.btn-danger {
+    @include button($dark, $danger, $danger-active);
+  }
+
+  // outline
+  &.btn-outline-primary {
+    @include buttonOutline($light, $primary);
+  }
+
+  &.btn-outline-success {
+    @include buttonOutline($light, $success);
+  }
+  &.btn-outline-danger {
+    @include buttonOutline($dark, $danger);
+  }
+
+  // costum button
+  // @include buttonOutline(color, bgColor);
+  // @include button(color, bgColor, bgColorHover);
+}
+
+// theme
+.light_mode-bg {
+  background: $light;
+  background-color: $light;
+  color: $dark;
+}
+
+.dark_mode-bg {
+  background: $dark;
+  background-color: $dark;
+  color: $light;
+}
+
+.light_mode {
+  color: $light;
+}
+
+.dark_mode {
+  color: $dark;
+}

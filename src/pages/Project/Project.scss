@@ -1,0 +1,28 @@
+@use "../../components/sass" as *;
+
+main.project {
+  position: relative;
+  border: 1px solid salmon;
+  overflow-x: hidden;
+  margin-top: 3pc;
+  .project-wrap {
+    text-align: center;
+    .item {
+      display: flex;
+      justify-content: center;
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid salmon;
+        width: 87%;
+        .box {
+          width: 15pc;
+          height: 20pc;
+          background-color: aqua;
+        }
+      }
+    }
+  }
+}

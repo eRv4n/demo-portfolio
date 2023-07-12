@@ -1,0 +1,58 @@
+@use "../sass" as *;
+
+nav.navbar {
+  position: sticky;
+  top: 0;
+  height: 90px;
+  width: 100%;
+  background-color: $dark;
+  z-index: 2;
+  div.nav-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    background-color: $dark;
+    .logo {
+      cursor: pointer;
+      span {
+        color: $primary;
+      }
+    }
+    .link {
+      display: flex;
+      color: $light;
+      a {
+        position: relative;
+        color: $gray;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        font-size: 1pc;
+        margin: 0 15px;
+      }
+      a.active {
+        font-weight: 450;
+        color: $primary;
+      }
+      a:hover {
+        color: $primary;
+      }
+    }
+
+    span.theme {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 114px;
+      button {
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+        padding: 5px;
+        transition: all 0.3s ease-in-out;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
