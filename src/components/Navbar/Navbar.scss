@@ -14,7 +14,7 @@ nav.navbar {
     height: 100%;
     transition: all 0.3s ease-in-out;
     // background-color: $dark;
-    .logo {
+    .nav-brand {
       cursor: pointer;
       span {
         color: $primary;
@@ -54,5 +54,75 @@ nav.navbar {
         font-size: 1.3rem;
       }
     }
+  }
+}
+
+.nav-responsive {
+  display: none;
+  button {
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
+    color: inherit;
+  }
+  .re-nav-wrap {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: inherit;
+    transform: translateX(1000px);
+    &.show {
+      transform: translateX(0);
+    }
+    transition: 0.3s all ease-in-out 0.1s;
+    .close {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 90px;
+      position: relative;
+      button {
+        position: absolute;
+        right: 90px;
+        cursor: pointer;
+      }
+    }
+    .re-link {
+      display: flex;
+      flex-direction: column;
+      a {
+        &:first-child {
+          margin-top: 2pc;
+        }
+        padding: 2pc 4pc;
+        font-size: 1.3pc;
+        text-decoration: none;
+        transition: 0.1s;
+      }
+      .active {
+        background-color: $primary;
+      }
+    }
+  }
+}
+
+// Responsive
+
+@media screen and (max-width: 768px) {
+  nav.navbar {
+    div.nav-wrap {
+      .link {
+        display: none;
+      }
+      span.theme {
+        display: none;
+      }
+    }
+  }
+  .nav-responsive {
+    display: inline-block;
   }
 }
