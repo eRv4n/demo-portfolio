@@ -1,10 +1,48 @@
-// @use "../../components/sass" as *;
+@use "../../components/sass" as *;
 
-.about {
-  width: 100%;
-  height: 100vh;
-  h1 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
+@keyframes arrowAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+
+div.about {
+  // overflow: hidden;
+  div.about-container {
+    overflow: hidden;
+    // width: 500vw;
+    // width: 300vw;
+    height: 97.5vh;
+    display: flex;
+    div.about-wrap {
+      height: 100%;
+      width: 100vw;
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:nth-child(2) {
+          height: 80%;
+          justify-content: center;
+        }
+        h1.titleHeader {
+          font-size: 4.5pc;
+        }
+        p {
+          color: $primary;
+          margin-top: 2pc;
+          text-decoration: none;
+          overflow: hidden;
+          width: 96px;
+          display: flex;
+          span {
+            transform: translateX(-17px);
+          }
+        }
+      }
+    }
   }
 }

@@ -11,13 +11,13 @@ const Home = () => {
       <Navbar />
       {/* Main content */}
       <main className="home">
-        <div className="home-wrap">
+        <div className="home-wrap openAnimation">
           <div>
             <h1>
               <span>Hi</span>, I'm eRv<span>4n</span>
               {/* <span>4n</span> */}
             </h1>
-            <p>BackEnd | FrontEnd | Devops</p>
+            <p>Student | FrontEnd </p>
             <button className="btn btn-outline-primary" onClick={() => navigate(`/about`)}>
               About me
             </button>

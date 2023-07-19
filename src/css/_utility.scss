@@ -63,3 +63,18 @@
 .dark_mode {
   color: $dark;
 }
+
+// Animation
+
+@keyframes openAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.openAnimation {
+  animation: openAnimation 0.5s ease-in-out;
+}
