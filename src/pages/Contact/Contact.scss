@@ -2,6 +2,8 @@
 
 .contact {
   margin-top: 2pc;
+  transition: 0.3s all ease-in-out;
+
   .contact-wrap {
     .container {
       display: flex;
@@ -35,15 +37,15 @@
             margin: 10px 0;
             height: 100px;
             font-family: sans-serif;
-            border: none;
             border-radius: 3px;
+            border: 1px solid $dark;
           }
           input {
             margin: 10px 0;
             font-size: 1pc;
             padding: 10px;
             outline: none;
-            border: none;
+            border: 1px solid $dark;
             border-radius: 3px;
           }
           div {

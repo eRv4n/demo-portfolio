@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`navbar`}>
+      <nav className={`navbar bg-${themeMode}`}>
         <div className={`nav-wrap container`}>
           <h1 className="logo">
             R<span>Creative</span>.
@@ -41,7 +41,7 @@ const Navbar = () => {
             ))}
           </div>
           <span className="theme">
-            <button class={`material-symbols-outlined bg-${themeMode}`} onClick={themeToggle}>
+            <button class={`material-symbols-outlined bg-${themeMode}-nav`} onClick={themeToggle}>
               {themeMode}
             </button>
           </span>

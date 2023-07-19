@@ -26,12 +26,6 @@ const Contact = () => {
                 <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
                 <div>
                   <input type="submit" value="send" className="btn btn-primary material-symbols-outlined" />
-                  {/* <a href="http://wa.me/+6281929984560?text=gege" className="btn btn-primary material-symbols-outlined">
-                    send
-                  </a> */}
-                  {/* <a href="http://wa.me/+6285714382010?text=tutor+bang" className="btn btn-primary material-symbols-outlined">
-                    send
-                  </a> */}
                 </div>
               </form>
             </div>

@@ -5,9 +5,9 @@ nav.navbar {
   top: 0;
   height: 90px;
   width: 100%;
-  // background-color: $dark;
   z-index: 2;
   div.nav-wrap {
+    transition: 0.3s all ease-in-out;
     display: flex;
     align-items: center;
     justify-content: space-between;

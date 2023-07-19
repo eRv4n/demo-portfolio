@@ -1,6 +1,7 @@
 @use "../../components/sass" as *;
 
 main.project {
+  transition: 0.3s all ease-in-out;
   position: relative;
   overflow-x: hidden;
   margin-top: 1pc;

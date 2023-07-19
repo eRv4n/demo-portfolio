@@ -44,7 +44,7 @@
 }
 
 // theme
-.light_mode {
+.bg-light_mode {
   background: $dark;
   background-color: $dark;
   color: $light;
@@ -54,6 +54,18 @@
   background: $light;
   background-color: $light;
   color: $dark;
+}
+
+.bg-light_mode-nav {
+  background: $light;
+  background-color: $light;
+  color: $dark;
+}
+
+.bg-dark_mode-nav {
+  background: $dark;
+  background-color: $dark;
+  color: $light;
 }
 
 .light_mode {
