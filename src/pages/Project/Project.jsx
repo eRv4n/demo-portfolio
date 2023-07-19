@@ -1,6 +1,6 @@
 import "./Project.scss";
 import "../../css/_utility.scss";
-import Navbar from "../../components/Navbar/Navbar";
+// import Navbar from "../../components/Navbar/Navbar";
 import Card from "../../components/Card/Card";
 
 const Project = () => {
@@ -14,7 +14,7 @@ const Project = () => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
       {/* main content */}
       <main className="project openAnimation">

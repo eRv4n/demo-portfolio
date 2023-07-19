@@ -5,7 +5,7 @@ nav.navbar {
   top: 0;
   height: 90px;
   width: 100%;
-  background-color: $dark;
+  // background-color: $dark;
   z-index: 2;
   div.nav-wrap {
     display: flex;
@@ -13,7 +13,7 @@ nav.navbar {
     justify-content: space-between;
     height: 100%;
     transition: all 0.3s ease-in-out;
-    background-color: $dark;
+    // background-color: $dark;
     .logo {
       cursor: pointer;
       span {

@@ -5,11 +5,13 @@ import About from "./pages/About/About";
 import Project from "./pages/Project/Project";
 import Contact from "./pages/Contact/Contact";
 import NotFound from "./pages/NotFound/NotFound";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <Navbar />
         <Routes>
           <Route path={"/"} element={<Home />} />
           <Route path={"/about"} element={<About />} />

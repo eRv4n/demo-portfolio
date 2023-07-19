@@ -44,16 +44,16 @@
 }
 
 // theme
-.light_mode-bg {
-  background: $light;
-  background-color: $light;
-  color: $dark;
-}
-
-.dark_mode-bg {
+.light_mode {
   background: $dark;
   background-color: $dark;
   color: $light;
+}
+
+.bg-dark_mode {
+  background: $light;
+  background-color: $light;
+  color: $dark;
 }
 
 .light_mode {

@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+// @use "../../components/sass" as *;
 
 main.home {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  // background-color: $dark;
 }
 
 .home-wrap {
@@ -18,7 +20,7 @@ main.home {
 .home-wrap div h1 {
   font-size: 4rem;
   font-family: "Poppins", sans-serif;
-  color: white;
+  // color: white;
 }
 
 .home-wrap div h1 span {
@@ -42,7 +44,7 @@ main.home {
 }
 
 div.img {
-  border: 5px solid white;
+  border: 5px solid;
   border-radius: 50%;
   width: 12pc;
   height: 12pc;

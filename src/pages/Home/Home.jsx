@@ -1,14 +1,14 @@
-import "./Home.css";
+import "./Home.scss";
 import "../../css/_utility.scss";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../../components/Navbar/Navbar";
+// import Navbar from "../../components/Navbar/Navbar";
 
 const Home = () => {
   const navigate = useNavigate();
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       {/* Main content */}
       <main className="home">
         <div className="home-wrap openAnimation">

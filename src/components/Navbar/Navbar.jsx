@@ -15,11 +15,20 @@ const Navbar = () => {
 
   const themeToggle = () => {
     themeMode === "light_mode" ? setThemeMode("dark_mode") : setThemeMode("light_mode");
+    console.log(themeMode);
   };
+
+  if (themeMode === "light_mode") {
+    document.querySelector("body").style.backgroundColor = "#212529";
+    document.querySelector("body").style.color = "#f8f9fa";
+  } else {
+    document.querySelector("body").style.backgroundColor = "#f8f9fa";
+    document.querySelector("body").style.color = "#212529";
+  }
 
   return (
     <>
-      <nav className="navbar">
+      <nav className={`navbar`}>
         <div className={`nav-wrap container`}>
           <h1 className="logo">
             R<span>Creative</span>.
@@ -32,7 +41,7 @@ const Navbar = () => {
             ))}
           </div>
           <span className="theme">
-            <button class={`material-symbols-outlined ${themeMode === "light_mode" ? "light_mode" : "dark_mode"}-bg`} onClick={themeToggle}>
+            <button class={`material-symbols-outlined bg-${themeMode}`} onClick={themeToggle}>
               {themeMode}
             </button>
           </span>

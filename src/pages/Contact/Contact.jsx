@@ -1,15 +1,15 @@
-import Navbar from "../../components/Navbar/Navbar";
+// import Navbar from "../../components/Navbar/Navbar";
 import "./Contact.scss";
 import "../../css/_utility.scss";
 import contactPNG from "../../assets/contact.png";
-import facebookIcon from "../../assets/icons/facebook.png";
-import instagramIcon from "../../assets/icons/instagram.png";
-import whatsappIcon from "../../assets/icons/whatsapp.png";
+// import facebookIcon from "../../assets/icons/facebook.png";
+// import instagramIcon from "../../assets/icons/instagram.png";
+// import whatsappIcon from "../../assets/icons/whatsapp.png";
 
 const Contact = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       {/* main content */}
       <div className="contact openAnimation">
         <div className="contact-wrap">
@@ -25,13 +25,13 @@ const Contact = () => {
                 <label htmlFor="massage">Massage : </label>
                 <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
                 <div>
-                  {/* <input type="submit" value="send" className="btn btn-primary material-symbols-outlined" /> */}
+                  <input type="submit" value="send" className="btn btn-primary material-symbols-outlined" />
                   {/* <a href="http://wa.me/+6281929984560?text=gege" className="btn btn-primary material-symbols-outlined">
                     send
                   </a> */}
-                  <a href="http://wa.me/+6285714382010?text=tutor+bang" className="btn btn-primary material-symbols-outlined">
+                  {/* <a href="http://wa.me/+6285714382010?text=tutor+bang" className="btn btn-primary material-symbols-outlined">
                     send
-                  </a>
+                  </a> */}
                 </div>
               </form>
             </div>
