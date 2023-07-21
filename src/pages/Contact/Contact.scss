@@ -3,12 +3,12 @@
 .contact {
   margin-top: 2pc;
   transition: 0.3s all ease-in-out;
-
+  overflow: hidden;
   .contact-wrap {
     .container {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 30px;
+      // margin-bottom: 30px;
       img {
         max-width: 450px;
         min-width: 100px;

@@ -11,8 +11,8 @@ const Contact = () => {
     <>
       {/* <Navbar /> */}
       {/* main content */}
-      <div className="contact openAnimation">
-        <div className="contact-wrap">
+      <div className="contact">
+        <div className="contact-wrap openAnimation">
           <div className="container">
             <img src={contactPNG} alt="contact" />
             <div className="item">

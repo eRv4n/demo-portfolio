@@ -17,8 +17,8 @@ const Project = () => {
       {/* <Navbar /> */}
 
       {/* main content */}
-      <main className="project openAnimation">
-        <div className="project-wrap container">
+      <main className="project">
+        <div className="project-wrap container openAnimation">
           <h1>#Project</h1>
           <div className="wrap-item">
             <Card
