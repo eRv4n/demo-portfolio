@@ -30,7 +30,7 @@ const Navbar = () => {
     }
   }, [themeMode]);
 
-  const [showNav, setShowNav] = useState("show");
+  const [showNav, setShowNav] = useState("not-show");
 
   const test = () => {
     showNav === "show" ? setShowNav("not-show") : setShowNav("show");

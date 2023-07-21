@@ -95,7 +95,7 @@ nav.navbar {
       flex-direction: column;
       a {
         &:first-child {
-          margin-top: 2pc;
+          margin-top: 1pc;
         }
         padding: 2pc 4pc;
         font-size: 1.3pc;
@@ -103,6 +103,7 @@ nav.navbar {
         transition: 0.1s;
       }
       .active {
+        transition: 0.3s all ease-in-out;
         background-color: $primary;
       }
     }
