@@ -1,7 +1,7 @@
 @use "../sass" as *;
 
 nav.navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
   height: 90px;
   width: 100%;

@@ -13,6 +13,7 @@ import Project from "./pages/Project/Project";
 import Contact from "./pages/Contact/Contact";
 import NotFound from "./pages/NotFound/NotFound";
 import Navbar from "./components/Navbar/Navbar";
+import Test from "./Test";
 
 function App() {
   useEffect(() => {
@@ -23,6 +24,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+          <Route path={"/home"} element={<Test />} />
           <Route path={"/"} element={<Home />} />
           <Route path={"/about"} element={<About />} />
           <Route path={"/project"} element={<Project />} />

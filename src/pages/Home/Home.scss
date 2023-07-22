@@ -14,36 +14,35 @@ main.home {
 
 .home-wrap {
   width: 100%;
-  height: 84vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
-
-.home-wrap div h1 {
-  font-size: 4rem;
-  font-family: "Poppins", sans-serif;
-  // color: white;
-}
-
-.home-wrap div h1 span {
-  /* color: #212529;
-  background-color: #0d6efd; */
-  color: #0d6efd;
-}
-
-.home-wrap div p {
-  font-size: 1.3rem;
-  width: max-content;
-  color: #adb5bd;
-  margin-bottom: 50px;
-}
-
-.home-wrap div button {
-  width: 60%;
-  margin: 0;
-  padding: 12px;
-  font-size: 1.2pc;
+  div {
+    margin-top: 6pc;
+    h1 {
+      font-size: 4rem;
+      font-family: "Poppins", sans-serif;
+      // color: white;
+      span {
+        /* color: #212529;
+        background-color: #0d6efd; */
+        color: #0d6efd;
+      }
+    }
+    p {
+      font-size: 1.3rem;
+      width: max-content;
+      color: #adb5bd;
+      margin-bottom: 50px;
+    }
+    button {
+      width: 60%;
+      margin: 0;
+      padding: 12px;
+      font-size: 1.2pc;
+    }
+  }
 }
 
 div.img {
