@@ -1,6 +1,5 @@
 // import Navbar from "../../components/Navbar/Navbar";
 import "./Contact.scss";
-import "../../css/_utility.scss";
 import contactPNG from "../../assets/contact.png";
 // import facebookIcon from "../../assets/icons/facebook.png";
 // import instagramIcon from "../../assets/icons/instagram.png";

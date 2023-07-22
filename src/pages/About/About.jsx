@@ -1,7 +1,6 @@
 import "./About.scss";
 // import { useNavigate } from "react-router-dom";
 // import Navbar from "../../components/Navbar/Navbar";
-import "../../css/_utility.scss";
 
 const About = () => {
   return (
@@ -14,7 +13,7 @@ const About = () => {
               #ABOUT
             </h1>
             <p>
-              <span class="material-symbols-outlined arrowAnimation">play_arrowplay_arrowplay_arrowplay_arrowplay_arrow</span>
+              <span className="material-symbols-outlined arrowAnimation">play_arrowplay_arrowplay_arrowplay_arrowplay_arrow</span>
             </p>
           </div>
         </div>

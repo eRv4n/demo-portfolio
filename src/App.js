@@ -1,5 +1,12 @@
-import "./css/main.css";
+import { useEffect } from "react";
+// library
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// css
+import "./css/main.css";
+import "./css/_utility.scss";
+// components
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Project from "./pages/Project/Project";
@@ -8,6 +15,9 @@ import NotFound from "./pages/NotFound/NotFound";
 import Navbar from "./components/Navbar/Navbar";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="App">
       <Router>
