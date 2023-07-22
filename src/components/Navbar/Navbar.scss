@@ -67,13 +67,14 @@ nav.navbar {
     color: inherit;
   }
   .re-nav-wrap {
-    width: 100%;
+    width: 80%;
     height: 100vh;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: inherit;
     transform: translateX(1000px);
+    box-shadow: 0px 0px 8px #0c0c0ca1;
     &.show {
       transform: translateX(0);
     }
@@ -86,7 +87,7 @@ nav.navbar {
       position: relative;
       button {
         position: absolute;
-        right: 90px;
+        right: 50px;
         cursor: pointer;
       }
     }
@@ -122,6 +123,9 @@ nav.navbar {
         display: none;
       }
     }
+  }
+  .container {
+    padding: 0 50px;
   }
   .nav-responsive {
     display: inline-block;
