@@ -1,5 +1,4 @@
 import "./Project.scss";
-import "../../css/_utility.scss";
 // import Navbar from "../../components/Navbar/Navbar";
 import Card from "../../components/Card/Card";
 

@@ -1,5 +1,4 @@
 // import { Link } from "react-router-dom";
-import "../../css/_utility.scss";
 import "./NotFound.scss";
 import errorImg from "../../assets/error1.png";
 import { Link } from "react-router-dom";

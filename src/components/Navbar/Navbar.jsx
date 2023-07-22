@@ -1,5 +1,4 @@
 import "./Navbar.scss";
-import "../../css/_utility.scss";
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -52,17 +51,17 @@ const Navbar = () => {
             ))}
           </div>
           <span className="theme">
-            <button class={`material-symbols-outlined bg-${themeMode}-nav`} onClick={themeToggle}>
+            <button className={`material-symbols-outlined bg-${themeMode}-nav`} onClick={themeToggle}>
               {themeMode}
             </button>
           </span>
           <div className="nav-responsive">
-            <button class="material-symbols-outlined" for="nav-responsive" onClick={test}>
+            <button className="material-symbols-outlined" onClick={test}>
               menu
             </button>
             <div className={`re-nav-wrap ${showNav}`}>
               <div className="close">
-                <button class="material-symbols-outlined" for="nav-responsive" onClick={test}>
+                <button className="material-symbols-outlined" onClick={test}>
                   close
                 </button>
               </div>
@@ -75,7 +74,7 @@ const Navbar = () => {
                   ))}
                 </div>
                 <span className="re-theme">
-                  <button class={`material-symbols-outlined bg-${themeMode}-nav`} onClick={themeToggle}>
+                  <button className={`material-symbols-outlined bg-${themeMode}-nav`} onClick={themeToggle}>
                     {themeMode}
                   </button>
                 </span>

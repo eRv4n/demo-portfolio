@@ -2,48 +2,37 @@
 
 @keyframes arrowAnimation {
   0% {
-    transform: translateX(0);
+    transform: translateY(100px);
+  }
+  50% {
+    transform: translateY(120px);
+  }
+  90% {
+    transform: translateY(100px);
   }
   100% {
-    transform: translateX(20px);
+    transform: translateY(100px);
   }
 }
 
 div.about {
-  // overflow: hidden;
+  overflow: hidden;
   transition: 0.3s all ease-in-out;
-  div.about-container {
-    overflow: hidden;
-    // width: 500vw;
-    // width: 300vw;
-    height: 97.5vh;
-    display: flex;
-    div.about-wrap {
-      height: 100%;
-      width: 100vw;
-      .item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        &:nth-child(2) {
-          height: 80%;
-          justify-content: center;
-        }
-        h1.titleHeader {
-          font-size: 4.5pc;
-        }
-        p {
-          color: $primary;
-          margin-top: 2pc;
-          text-decoration: none;
-          overflow: hidden;
-          width: 96px;
-          display: flex;
-          span {
-            transform: translateX(-17px);
-          }
-        }
-      }
-    }
+  h1 {
+    font-size: 4.5pc;
   }
+  span {
+    transform: translateY(100px);
+    font-size: 1.5pc;
+    animation: arrowAnimation 2s ease-in-out infinite 1s;
+    // animation: arrowAnimation 0.3s all ease-in-out infinite;
+  }
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
