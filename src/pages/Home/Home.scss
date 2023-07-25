@@ -55,3 +55,21 @@ div.img {
   background-position: center;
   background-size: cover;
 }
+@media screen and (max-width: 768px) {
+  div.img {
+    margin: 0;
+    width: 8pc;
+    height: 8pc;
+    padding: 0;
+  }
+  .home-wrap {
+    flex-direction: column-reverse;
+    justify-content: center;
+    div {
+      margin-top: 2pc;
+      h1 {
+        font-size: 3pc;
+      }
+    }
+  }
+}
