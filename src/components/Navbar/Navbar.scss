@@ -59,6 +59,7 @@ nav.navbar {
 
 .nav-responsive {
   display: none;
+  z-index: 5;
   button {
     cursor: pointer;
     background: none;
@@ -108,7 +109,49 @@ nav.navbar {
         background-color: $primary;
       }
     }
+    .items {
+      display: flex;
+      padding: 0 35px;
+      .re-theme {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        button {
+          padding: 5px;
+          transition: 0.3s all ease-in-out;
+          border-radius: 50%;
+          &.bg-light_mode-nav {
+            color: $dark;
+            background-color: $light;
+          }
+          &.bg-dark_mode-nav {
+            color: $light;
+            background-color: $dark;
+          }
+        }
+      }
+    }
   }
+}
+
+button.closeBtn {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  top: 0;
+  padding: 0;
+  z-index: 4;
+  display: none;
+  border: none;
+  outline: none;
+  &.show {
+    opacity: 1;
+    display: block;
+  }
+  // transform: translateX(1000px);
 }
 
 // Responsive
