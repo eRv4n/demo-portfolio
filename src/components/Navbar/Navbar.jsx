@@ -65,6 +65,13 @@ const Navbar = () => {
                   close
                 </button>
               </div>
+              <div className="items">
+                <span className={`re-theme`}>
+                  <button className={`material-symbols-outlined bg-${themeMode}-nav`} onClick={themeToggle}>
+                    {themeMode}
+                  </button>
+                </span>
+              </div>
               <div className="re-item">
                 <div className="re-link">
                   {navbar.map((item) => (
@@ -73,15 +80,11 @@ const Navbar = () => {
                     </NavLink>
                   ))}
                 </div>
-                <span className="re-theme">
-                  <button className={`material-symbols-outlined bg-${themeMode}-nav`} onClick={themeToggle}>
-                    {themeMode}
-                  </button>
-                </span>
               </div>
             </div>
           </div>
         </div>
+        <button className={`closeBtn ${showNav}`} onClick={test}></button>
       </nav>
     </>
   );
