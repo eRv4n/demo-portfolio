@@ -1,13 +1,13 @@
 import "./Navbar.scss";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const navbar = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Project", href: "/project" },
-    { name: "Contact", href: "/contact" },
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Project", href: "#project" },
+    { name: "Contact", href: "#contact" },
   ];
 
   const [themeMode, setThemeMode] = useState("light_mode");
@@ -31,7 +31,7 @@ const Navbar = () => {
 
   const [showNav, setShowNav] = useState("not-show");
 
-  const test = () => {
+  const showNavbar = () => {
     showNav === "show" ? setShowNav("not-show") : setShowNav("show");
     console.log(showNav);
   };
@@ -45,9 +45,12 @@ const Navbar = () => {
           </h1>
           <div className="link">
             {navbar.map((item) => (
-              <NavLink key={item.name} to={item.href}>
+              // <NavLink key={item.name} to={item.href}>
+              //   {item.name}
+              // </NavLink>
+              <a key={item.name} href={item.href}>
                 {item.name}
-              </NavLink>
+              </a>
             ))}
           </div>
           <span className="theme">
@@ -56,12 +59,12 @@ const Navbar = () => {
             </button>
           </span>
           <div className="nav-responsive">
-            <button className="material-symbols-outlined" onClick={test}>
+            <button className="material-symbols-outlined" onClick={showNavbar}>
               menu
             </button>
             <div className={`re-nav-wrap ${showNav}`}>
               <div className="close">
-                <button className="material-symbols-outlined" onClick={test}>
+                <button className="material-symbols-outlined" onClick={showNavbar}>
                   close
                 </button>
               </div>
@@ -75,16 +78,19 @@ const Navbar = () => {
               <div className="re-item">
                 <div className="re-link">
                   {navbar.map((item) => (
-                    <NavLink key={item.name} to={item.href} onClick={test}>
+                    // <NavLink key={item.name} to={item.href} onClick={showNavbar}>
+                    //   {item.name}
+                    // </NavLink>
+                    <a key={item.name} href={item.href} onClick={showNavbar}>
                       {item.name}
-                    </NavLink>
+                    </a>
                   ))}
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <button className={`closeBtn ${showNav}`} onClick={test}></button>
+        <button className={`closeBtn ${showNav}`} onClick={showNavbar}></button>
       </nav>
     </>
   );

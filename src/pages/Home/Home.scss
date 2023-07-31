@@ -36,11 +36,12 @@ main.home {
       color: #adb5bd;
       margin-bottom: 50px;
     }
-    button {
-      width: 60%;
+    a {
+      width: 100px;
       margin: 0;
-      padding: 12px;
+      padding: 12px 50px;
       font-size: 1.2pc;
+      text-decoration: none;
     }
   }
 }
