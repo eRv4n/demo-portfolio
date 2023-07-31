@@ -1,27 +1,58 @@
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./About.scss";
 
 const About = () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    // Animasi pergeseran horizontal
+    const sections = gsap.utils.toArray(".sections");
+
+    gsap.to(sections, {
+      x: -100 * (sections.length - 1) + "vw",
+      scrollTrigger: {
+        trigger: ".about",
+        scrub: 3,
+        // markers: true,
+        start: "top top",
+        end: "bottom bottom",
+      },
+    });
+  }, []);
+
   return (
-    <div className="about">
-      <div className="container">
-        <div className="about-wrap">
-          <div>
-            <div className="page" data-aos="fade" data-aos-duration="1000">
-              {/* <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                #ABOUT
-              </h1> */}
-              <h1>#ABOUT</h1>
-              <span>SCROLL</span>
-              <span class="material-symbols-outlined">keyboard_arrow_down</span>
-            </div>
-            <div className="page">
-              <h1 data-aos="fade-right" data-aos-duration="1000">
-                Hello! my name eRv4n
-              </h1>
-            </div>
-            <div className="page"></div>
+    <div className="about" id="about">
+      <div className="about-wrap">
+        <h1 className="about-label">#ABOUT</h1>
+        <section className="sections">
+          <div className="sections-wrapper">
+            <h2>about1</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab aliquam id quod, illo ut iste natus impedit facere magnam fugit eum
+              voluptatem hic ducimus illum dicta atque sint sit saepe?
+            </p>
           </div>
-        </div>
+        </section>
+        <section className="sections">
+          <div className="sections-wrapper">
+            <h2>about1</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab aliquam id quod, illo ut iste natus impedit facere magnam fugit eum
+              voluptatem hic ducimus illum dicta atque sint sit saepe?
+            </p>
+          </div>
+        </section>
+        <section className="sections">
+          <div className="sections-wrapper">
+            <h2>about1</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab aliquam id quod, illo ut iste natus impedit facere magnam fugit eum
+              voluptatem hic ducimus illum dicta atque sint sit saepe?
+            </p>
+          </div>
+        </section>
       </div>
     </div>
   );

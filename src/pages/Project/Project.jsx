@@ -16,9 +16,11 @@ const Project = () => {
       {/* <Navbar /> */}
 
       {/* main content */}
-      <main className="project">
-        <div className="project-wrap container openAnimation">
-          <h1>#Project</h1>
+      <div className="project" id="project">
+        <div className="project-wrap container">
+          <h1 data-aos="fade-right" data-aos-duration="1000">
+            #Project
+          </h1>
           <div className="wrap-item">
             <Card
               src="https://github.com/eRv4n/basic-calculator/raw/main/img/Screenshot%202023-07-12%20205141.png"
@@ -27,7 +29,7 @@ const Project = () => {
             />
           </div>
         </div>
-      </main>
+      </div>
     </>
   );
 };

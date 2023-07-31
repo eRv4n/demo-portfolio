@@ -7,11 +7,11 @@ import contactPNG from "../../assets/contact.png";
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="contact-wrap openAnimation">
         <div className="container">
-          <img src={contactPNG} alt="contact" />
-          <div className="item">
+          <img src={contactPNG} alt="contact" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="500" />
+          <div className="item" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out">
             <h1>
               Contact <span>US</span>
             </h1>

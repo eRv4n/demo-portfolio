@@ -1,0 +1,20 @@
+/* HorizontalScroll.css */
+.horizontal-scroll {
+  width: 100%;
+  overflow-x: hidden; /* Menghilangkan horizontal scrollbar */
+  color: #222;
+}
+
+.scroll-container {
+  display: flex; /* Menampilkan elemen dalam satu baris */
+  white-space: nowrap; /* Mencegah konten berbaris */
+}
+
+.section {
+  flex-shrink: 0; /* Menetapkan lebar elemen tetap agar tidak berubah */
+  width: 100vw; /* Lebar elemen sama dengan lebar viewport */
+  height: 100vh; /* Tinggi elemen sama dengan tinggi viewport */
+  padding: 20px;
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+}
