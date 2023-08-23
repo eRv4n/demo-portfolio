@@ -1,0 +1,112 @@
+@use "../../../sass" as *;
+
+div.about {
+  transition: 0.3s all ease-in-out;
+  overflow-x: visible;
+  height: 500vh;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  h1 {
+    font-size: 4.5pc;
+  }
+  span {
+    transform: translateY(100px);
+    font-size: 1.5pc;
+    animation: arrowAnimation 2s ease-in-out infinite 1s;
+    // animation: arrowAnimation 0.3s all ease-in-out infinite;
+  }
+  .about-wrap {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.sections {
+  // background-color: salmon;
+  height: 70%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  span {
+    color: $primary;
+  }
+  .sections-wrapper {
+    margin-top: 150px;
+    padding: 0 90px;
+    display: flex;
+    justify-content: space-between;
+    .sections-text {
+      width: 50%;
+      h2 {
+        font-size: 2pc;
+      }
+    }
+    .profile {
+      img {
+        -webkit-mask-image: url("../../../assets/circle.svg");
+        mask-image: url("../../../assets/circle.svg");
+        -webkit-mask-position: center;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: 100%;
+        width: 350px;
+      }
+    }
+  }
+}
+.sections:nth-child(3) {
+  align-items: flex-start;
+  // justify-content: space-between;
+  .sections-wrapper {
+    .sections-text {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .iconList {
+        margin-top: 3pc;
+        margin-left: 1pc;
+        img {
+          margin-right: 1pc;
+          width: 36px;
+        }
+      }
+    }
+    .img {
+      width: 500px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.about-label {
+  position: absolute;
+  top: 100px;
+  left: 90px;
+}
+
+svg {
+  top: 8pc;
+  left: 90px;
+  position: absolute;
+  g {
+    path {
+      transform: translateX(-102%);
+    }
+  }
+}
+
+.anim {
+  opacity: 0;
+  cursor: default;
+}
